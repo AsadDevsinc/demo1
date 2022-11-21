@@ -14,8 +14,6 @@ import {
 const STATUS_BAR_OFFSET =
   Platform.OS === 'android' ? -StatusBar.currentHeight : 0;
 
-// TODO: Deprecate and remove exports from here
-// Currently leaving for backwards compatibility
 export {
   IPHONE_12_LONG_SIDE,
   IPHONE_12_MAX_LONG_SIDE,
