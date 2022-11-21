@@ -1,3 +1,4 @@
+import React from 'react';
 import { setDefaultThemeStyle } from './init';
 
 setDefaultThemeStyle();
@@ -92,3 +93,4 @@ export {
   NAVIGATION_HEADER_HEIGHT,
   STATUS_BAR_OFFSET,
 } from './const';
+
