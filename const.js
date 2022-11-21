@@ -1,21 +1,4 @@
-import { Platform, StatusBar } from 'react-native';
-import {
-  IPHONE_12_LONG_SIDE,
-  IPHONE_12_MAX_LONG_SIDE,
-  IPHONE_X_HOME_INDICATOR_PADDING,
-  IPHONE_X_LONG_SIDE,
-  IPHONE_X_NOTCH_PADDING,
-  IPHONE_XR_LONG_SIDE,
-  IPHONE_XR_NOTCH_PADDING,
-  NAVIGATION_BAR_HEIGHT,
-  NAVIGATION_HEADER_HEIGHT,
-} from './helpers';
 
-const STATUS_BAR_OFFSET =
-  Platform.OS === 'android' ? -StatusBar.currentHeight : 0;
-
-// TODO: Deprecate and remove exports from here
-// Currently leaving for backwards compatibility
 export {
   IPHONE_12_LONG_SIDE,
   IPHONE_12_MAX_LONG_SIDE,
@@ -27,4 +10,9 @@ export {
   NAVIGATION_BAR_HEIGHT,
   NAVIGATION_HEADER_HEIGHT,
   STATUS_BAR_OFFSET,
+};
+module.exports = {
+  dependency: {
+    assets: ['fonts'],
+  },
 };
